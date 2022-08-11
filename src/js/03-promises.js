@@ -5,7 +5,6 @@ const formEl = document.querySelector('.form');
 
 formEl.addEventListener('submit', startPromise);
 
-
 function createPromise(position, newDelay) {
   const shouldResolve = Math.random() > 0.3;
     return new Promise((resolve, reject) => {
