@@ -8,7 +8,6 @@ formEl.addEventListener('submit', startPromise);
 function createPromise(position, newDelay) {
   const shouldResolve = Math.random() > 0.3;
     return new Promise((resolve, reject) => {
-     
         if (shouldResolve) {
           return resolve({ position, newDelay });
         } else {
